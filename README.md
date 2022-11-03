@@ -1,2 +1,2 @@
 # 미퀴마우스ver2.0
-Calculus Quiz solving program (a.k.a  Micqui Mouse) 
+<span style="color:red"> Calculus Quiz solving program</span> (a.k.a  Micqui Mouse) 
