@@ -14,4 +14,4 @@
 
 
 ## :mortar_board: License 
-This project is licensed under the MIT License
+-ver 2.0 is licensed under the MIT License
