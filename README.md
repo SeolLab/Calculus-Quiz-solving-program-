@@ -3,10 +3,6 @@
 
 
 
-
-
-
-
 ``` import sys
 import os
 import pyocr
@@ -37,7 +33,8 @@ if __name__ == '__main__':
         builder=wk_builder
     )
 
-    print(ocr_results)```
+    print(ocr_results)
+```
 
 
 ## source
