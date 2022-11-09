@@ -1,2 +1,17 @@
 # 🐭미퀴마우스ver2.0🖱️
 <span style="color:red"> Calculus Quiz solving program</span> (a.k.a  Micqui Mouse) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+## :mortar_board: License 
+This project is licensed under the MIT License
