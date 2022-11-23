@@ -20,9 +20,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     tool = tools[0]
-
-    # img_path = "./test_kor.png"
-    # img_path = "./image.png"
+    
     img_path = "./7차퀴즈01.png"
     wk_builder = pyocr.builders.TextBuilder(tesseract_layout=6)
     ocr_results = tool.image_to_string(
