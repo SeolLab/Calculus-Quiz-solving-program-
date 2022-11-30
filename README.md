@@ -11,7 +11,7 @@
 
 
 ## Reference
-[research_korean_file_reader: by using pyocr](https://opentutorials.org/module/782/6083)
+* [research_korean_file_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-kor-textbuilder/)
 
 
 ## :mortar_board: License 
