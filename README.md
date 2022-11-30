@@ -9,5 +9,12 @@
 ## source
 
 
+
+## Reference
+[research_korean_file_reader: by using pyocr](https://opentutorials.org/module/782/6083)
+
+
 ## :mortar_board: License 
 -ver 2.0 is licensed under the MIT License
+
+
