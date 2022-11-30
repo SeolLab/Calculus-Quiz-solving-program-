@@ -23,7 +23,7 @@
 ## 🪜step4 
 | 출력
 #### 💡tips: 
-yntax Error "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape" solution 
+syntax Error "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape" solution 
 : path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'로 변경, 또는 '\'대신 '\\'이용.
 
 
