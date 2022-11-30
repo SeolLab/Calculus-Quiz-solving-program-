@@ -31,4 +31,3 @@ if __name__ == '__main__':
     )
 
     print(ocr_results)
-    input("Please Enter to Exit")
