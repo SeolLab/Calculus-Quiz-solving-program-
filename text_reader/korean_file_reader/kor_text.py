@@ -1,3 +1,4 @@
+#korean_file_reader program(using pyocr)
 import sys
 import os
 import pyocr
