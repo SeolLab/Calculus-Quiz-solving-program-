@@ -1,10 +1,9 @@
 import sys
 import os
-import pyocr
-import pyocr.builders
-
 import cv2
 from PIL import Image
+import pyocr
+import pyocr.builders
 
 if __name__ == '__main__':
     this_program_directory = os.path.dirname(os.path.abspath(__file__))
@@ -18,12 +17,9 @@ if __name__ == '__main__':
     if len(tools) == 0:
         print("OCR tool is not found in path(" + tesseract_home + ")")
         sys.exit(1)
-
     tool = tools[0]
-
-    # img_path = "./test_kor.png"
-    # img_path = "./image.png"
     img_path = "./7차퀴즈01.png"
+#     img_path = "./7차퀴즈01.png"
     wk_builder = pyocr.builders.TextBuilder(tesseract_layout=6)
     ocr_results = tool.image_to_string(
         Image.open(img_path),
@@ -31,7 +27,8 @@ if __name__ == '__main__':
         builder=wk_builder
     )
 
+    
     print(ocr_results)
-    input("Please Enter to Exit")
+
 
 
