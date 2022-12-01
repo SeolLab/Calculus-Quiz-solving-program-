@@ -28,7 +28,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 
 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="300" height="300"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="400" height="300"/></p>
 
 
 
