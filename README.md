@@ -4,14 +4,21 @@
 
 
 
+## 📋Table of content
+* 
+
+
+|Task|Date|
+|---|---|
+|수식 이미지 받아와 latex 포맷의 텍스트로 변환하고 문제의 답을 도출하는 문제|2022.11.1~2022.12.11|
+
+
+
 
 
 ## source
 
 
-
-Task	Date	Team
-수식 이미지를 latex 포맷의 텍스트로 변환하는 문제	2021.05.24 ~ 2021.06.15	5조 ConnectNet
 
 
 
@@ -39,6 +46,12 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 ## Reference
 * [research_Korean_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-kor-textbuilder/)
     * [sub reserch_digital_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-digit/)
+* [research_converting equation to LaTex by using **mathocr**](https://github.com/lukas-blecher/LaTeX-OCR)
+* [research_converting equation to LaTex 2 by using **mathocr**](https://github.com/harvardnlp/im2markup)
+* [research_converting equation to LaTex 3 by using **mathpixocr_wrapper**(https://github.com/minyez/mathpixocr_wrapper)
+* [research_**MathOCR**](https://github.com/AIRLegend/MathOCR)
+
+
 
 ## :mortar_board: License 
 -ver 2.0 is licensed under the MIT License
