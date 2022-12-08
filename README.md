@@ -24,10 +24,14 @@
 
 ## 설치 및 진행
 * 소스 다운로드 
-> git clone https://github.com/seol731/-project-ver2.0.git
+``` 
+git clone https://github.com/seol731/-project-ver2.0.git
+```
 
 * 설치 파일
-> pip install -r requirement.txt (이건 vscode에서 작업하는 경우에 한함. 필자는 에러가 나서 colab과 jupyter notebook 환경에서 작업.)
+```
+pip install -r requirement.txt (이건 vscode에서 작업하는 경우에 한함. 필자는 에러가 나서 colab과 jupyter notebook 환경에서 작업.)
+```
 
 requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포맷의 text로 변환하기 위해 필요한 library 
 | !pip install Pillow -U -qq
@@ -47,11 +51,13 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 ### pre step2
 | 자동 업로드 by 크롤링  
-```from selenium import webdriver
+```
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 driver.get("https://colab.research.google.com/drive/1FJFH7UWQjfSuCFTDeEsvnuXI1-P3kC3O#scrollTo=CBdcWZBtCYCZ")
-driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png") ``` 
+driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png") 
+``` 
 
 
 <C:\Users\Admin\Desktop\quiz7-1.png>파일을 colab의 'LaTeX변환' 코드가 작성된 창에 자동 업로드 되도록 설정.
