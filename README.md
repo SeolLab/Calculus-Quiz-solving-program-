@@ -1,6 +1,6 @@
 # 🐭미퀴마우스ver2.0🖱️
-<span style="color:red"> Calculus Quiz solving program</span> (a.k.a  Micqui Mouse) 
-#OCR #algorithm 
+<span style="color:red"> Calculus Quiz solving program</span> (a.k.a  Micqui Mouse) 미적퀴즈 풀어주는 프로그램 
+#OCR #mathocr  
 
 
 
@@ -10,12 +10,13 @@
 
 
 
-
+Task	Date	Team
+수식 이미지를 latex 포맷의 텍스트로 변환하는 문제	2021.05.24 ~ 2021.06.15	5조 ConnectNet
 
 
 
 ## 🪜step1
-| 한글과 수학기호 분리
+|
 ## 🪜step2
 | 수학기호 식별
 ## 🪜step3 
