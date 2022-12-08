@@ -20,9 +20,19 @@
 
 
 ## 연구의 필요성
-> 
+ 
 
 ## 설치 및 진행
+* 소스 다운로드 
+> git clone https://github.com/seol731/-project-ver2.0.git
+
+* 설치 파일
+> pip install -r requirement.txt (이건 vscode에서 작업하는 경우에 한함. 필자는 에러가 나서 colab과 jupyter notebook 환경에서 작업했다.)
+
+requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포맷의 text로 변환하기 위해 필요한 library 
+!pip install Pillow -U -qq
+!pip install pix2tex -qq
+!pip install opencv-python-headless==4.1.2.30 -U -qq
 
 
 
@@ -31,7 +41,7 @@
 ### 🪜step1
 | 수식
 ### 🪜step2
-| 수식을 LaTeX로 변환
+| 수식을 LaTeX로 변환 - 아래 reference의 1. research_converting equation to LaTex by using **mathocr**을 참고. 
 ### 🪜step3 
 | 계산 
 ### 🪜step4 
@@ -45,7 +55,11 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 
 
 ## 실패한 부분
+* step1 
+   * 자동으로 한글과 수식을 분리해주는 기능을 넣지 못함. 아직은 수동으로 수식을 한글과 분리해야 함. ocr로 한글 텍스트 파일을 불러오는 데는 성공했으나, 수식만 따로 분리하는 데는 실패. 
 
+* step2 
+   * ocr(pix2tex.LatexOCR()이용)상 한계 존재. 사진이 흔들렸거나 흑백을 반전한 경우, 수식을 인식하는 데 걸리는 반전하기 전에 비해 3배 이상의 소요시간 발생. (ex)글씨가 작을 때, 0을 Θ로 인식함.)
 
 
 
@@ -56,14 +70,14 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 ## Reference
 * [research_Korean_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-kor-textbuilder/)
     * [sub reserch_digital_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-digit/)
-* [research_converting equation to LaTex by using **mathocr**](https://github.com/lukas-blecher/LaTeX-OCR)
-* [research_converting equation to LaTex 2 by using **mathocr**](https://github.com/harvardnlp/im2markup)
-* [research_converting equation to LaTex 3 by using **mathpixocr_wrapper** ](https://github.com/minyez/mathpixocr_wrapper)
-* [research_MathOCR](https://github.com/AIRLegend/MathOCR)
+* [1. research_converting equation to LaTex by using **mathocr**](https://github.com/lukas-blecher/LaTeX-OCR)
+* [2. research_converting equation to LaTex by using **mathocr**](https://github.com/harvardnlp/im2markup)
+* [3. research_converting equation to LaTex by using **mathpixocr_wrapper** ](https://github.com/minyez/mathpixocr_wrapper)
+* [4. research_MathOCR](https://github.com/AIRLegend/MathOCR)
 
 
 
 ## :mortar_board: License 
--ver 2.0 is licensed under the MIT License
+This is licensed under the MIT License
 
 
