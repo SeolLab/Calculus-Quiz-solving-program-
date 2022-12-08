@@ -51,7 +51,9 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 from selenium.webdriver.common.keys import Keys
 driver = webdriver.Chrome()
 driver.get("https://colab.research.google.com/drive/1FJFH7UWQjfSuCFTDeEsvnuXI1-P3kC3O#scrollTo=CBdcWZBtCYCZ")
-driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png")```
+driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png") ``` 
+
+
 <C:\Users\Admin\Desktop\quiz7-1.png>파일을 colab의 'LaTeX변환' 코드가 작성된 창에 자동 업로드 되도록 설정.
 
 위에서 주어진 코드와 png파일은 예시일 뿐, 실제로는 드래그해서 얻은 cropped파일이 send_keys에 적히도록 작성, 사용자가 드래그해서 수동으로 추출한 png파일들이 colab환경에 자동 업로드.  
