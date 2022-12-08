@@ -20,7 +20,8 @@
 
 
 ## 연구의 필요성
- 
+
+첫 research는 ocr부터 시작. 한글로 작성된 문서와 엑셀로 작성된 문서를 ocr로 읽어 오는 프로그램 작성. 하지만 수식이 들어가는 순간 문자가 깨지면서 불러오기 실패. ~~처음부터 난관봉착..~~
 
 ## 설치 및 진행
 * 소스 다운로드 
@@ -34,8 +35,11 @@ pip install -r requirement.txt (이건 vscode에서 작업하는 경우에 한�
 ```
 
 requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포맷의 text로 변환하기 위해 필요한 library 
+
 | !pip install Pillow -U -qq
+
 | !pip install pix2tex -qq
+
 | !pip install opencv-python-headless==4.1.2.30 -U -qq
 
 
@@ -49,7 +53,7 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 #### Try3 <관심영역 수동 드래그>
 
 
-### pre step2
+### 🪜pre step2
 | 자동 업로드 by 크롤링  
 ```
 from selenium import webdriver
@@ -59,10 +63,24 @@ driver.get("https://colab.research.google.com/drive/1FJFH7UWQjfSuCFTDeEsvnuXI1-P
 driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png") 
 ``` 
 
-
 <C:\Users\Admin\Desktop\quiz7-1.png>파일을 colab의 'LaTeX변환' 코드가 작성된 창에 자동 업로드 되도록 설정.
 
-위에서 주어진 코드와 png파일은 예시일 뿐, 실제로는 드래그해서 얻은 cropped파일이 send_keys에 적히도록 작성, 사용자가 드래그해서 수동으로 추출한 png파일들이 colab환경에 자동 업로드.  
+위에서 주어진 코드와 png파일은 예시일 뿐, 실제로는 드래그해서 얻은 cropped파일이 send_keys에 적히도록 작성, 사용자가 드래그해서 수동으로 추출한 png파일들이 colab환경에 자동 업로드. 아래 코드는 이에 대한 예시. 사용자가 드래그해서 수동으로 추출한 여러 png파일들을 convert 홈페이지에 자동 업로드하는 과정. 
+
+```
+#크롤링 예시 - in convertor 홈페이지. 
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import glob 
+
+driver = webdriver.Chrome()
+driver.get("https://convertio.co/kr/image-converter/")
+output = glob.glob('C:\\Users\\Admin\\3,4. 자동업로드\\quiz7_crop*.png')
+for i in range(1,len(output)+1): 
+    driver.find_element_by_css_selector("input[type='file']").send_keys(f"C:\\Users\\Admin\\3,4. 자동업로드\\quiz7_crop{i}.png")
+```
+#### 💡tips: 
+send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driver 파일 위치를 찾은 후 import glob를 사용해 quiz7_crop*.png로 output설정, for문을 이용해 전부 업로드시킨다. 
 
 ### 🪜step2
 | 수식을 LaTeX로 변환 - 아래 reference의 1. research_converting equation to LaTex by using **mathocr**을 참고. 
