@@ -92,6 +92,12 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 syntax Error:   "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape"  
 solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'로 변경, 또는 '\'대신 '\\'이용.
 
+
+
+
+~~됐다! 드디어 미적분 교수님을 감쪽같이 속일 수 있게 됐다.~~
+
+
 <p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="400" height="300"/></p>
 
 
