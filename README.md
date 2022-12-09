@@ -77,6 +77,8 @@ Solarized dark             |  Solarized Ocean
 
 
 #### Try3 <관심영역 수동 드래그>
+<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="46%" >
+
 
 
 ### 🪜pre step2
