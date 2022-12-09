@@ -50,6 +50,8 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 | 수식 인식 
 #### Try1 <이미지 경계선 자동 추출>
 
+<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" align= 'left'>
+
 
 
 
