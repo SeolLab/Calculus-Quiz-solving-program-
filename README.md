@@ -56,8 +56,9 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 #### Try2 <직사각형 영역 수동 추출>
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역을 내가 원하는 형태의  
 
-
-
+<p align ="center">
+<img src = "https://user-images.githubusercontent.com/83863024/206681683-b8ada03d-df3a-4c94-acda-7bf0f5389636.mp4">
+</p>
 
 #### Try3 <관심영역 수동 드래그>
 
