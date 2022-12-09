@@ -57,6 +57,12 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역을 내가 원하는 형태의  
 
 
+
+
+
+<img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif" align= 'left'>
+<img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif" align= 'right'>
+
 <p align ="center">
 <img src = "https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif" >
 </p>
