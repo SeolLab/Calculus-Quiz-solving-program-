@@ -50,28 +50,34 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 | 수식 인식 
 #### Try1 <이미지 경계선 자동 추출>
 
-<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" align= 'left'>
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![]( width="30%", height ="30%")  |  ![]([./2121.jpg]( width="30%", height ="30%"))
 
 
 
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="46%" />
+  <img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="46%" />
+</p>
+
+<img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="46%" />
 
 #### Try2 <직사각형 영역 수동 추출>
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역을 내가 원하는 형태의  
 
 
 
-<figure class="third">
-    <img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="30%", height ="30%">
-    <img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="30%", height ="30%">
-    <img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif"  width="30%", height ="30%">
-figure>
-
-<p align ="center">
-<img src = "" >
+<p float="left">
+    <img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="46%">
+    <img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="46%">
 </p>
 
+
 #### Try3 <관심영역 수동 드래그>
-<img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" align= 'right'>
+
 
 ### 🪜pre step2
 | 자동 업로드 by 크롤링  
