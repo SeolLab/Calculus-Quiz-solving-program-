@@ -53,22 +53,20 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 
 
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="46%" />
-  <img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="46%" />
-</p>
+<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="90%" />
+<img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="90%" />
 
-<img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="46%" />
+
+<img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="90%" />
 
 #### Try2 <직사각형 영역 수동 추출>
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역을 내가 원하는 형태의  
 
 
 
-<p float="left">
-    <img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="46%">
-    <img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="46%">
-</p>
+<img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="90%">
+<img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="90%">
+
 
 
 #### Try3 <관심영역 수동 드래그>
@@ -100,11 +98,28 @@ for i in range(1,len(output)+1):
 #### 💡tips: 
 send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driver 파일 위치를 찾은 후 import glob를 사용해 quiz7_crop*.png로 output설정, for문을 이용해 전부 업로드시킨다.
 
-<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="46%" >
+<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="90%" >
 
 
 ### 🪜step2
 | 수식을 LaTeX로 변환 - 아래 [Reference](#Reference)의 [1. research_converting equation to LaTex by using **mathocr**]을 참고. 
+
+
+
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/83863024/206823159-7cb8b69b-95b9-4869-a145-cea1191b0ee1.png">
+  <img src="https://user-images.githubusercontent.com/83863024/206823160-ff9eb107-3d43-4f81-b304-60281380e72a.png">
+</p>
+
+
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/83863024/206823161-8a34cc37-6d73-472a-a8ab-b2b303637e51.jpg">
+  <img src="https://user-images.githubusercontent.com/83863024/206823164-7c2897d2-2759-4461-ade8-126d43df6f86.jpg">
+</p>
+
+
+
 ### 🪜step3 
 | 계산 
 ### 🪜step4 
