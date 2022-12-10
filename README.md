@@ -112,7 +112,7 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 
 github 코드 파일에 step4가 없는 이유는 step3코드와 함께 작성되었기 때문. 계산 후, 정답이(손글씨로) 문제지 화면에 바로 출력됨.
 
-계산 된 값들은 answer list에 차례로 저장된 후(문제 수가 통상 7-8개로 주어지기 때문에 len(answer)값은 8을 넘지 않음.) '정답입력받기.txt' 파일에 자동 write됨. (현재는 빈 상태) 그 후 문제 순서대로 지정된 문제지 좌표값 (xcord, ycord) 위치에 준비된 글꼴 사진을 붙여넣음.(pasting(xcord,ycord)) 문제지는 앞면, 뒷면이 있으므로 최종 결과를 show(). 
+계산 된 값들은 answer list에 차례로 저장된 후(문제 수가 통상 7-8개로 주어지기 때문에 len(answer)값은 8을 넘지 않음.) '정답입력받기.txt' 파일에 자동 write()됨. (현재는 빈 상태) 그 후 문제 순서대로 지정된 문제지 좌표값 (xcord, ycord) 위치에 준비된 글꼴 사진을 붙여넣음.(pasting(xcord,ycord)) 문제지는 앞면, 뒷면이 있으므로 앞면과 뒷면 결과를 순서대로 show(). 
 
 #### 💡tips: 
 syntax Error:   "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape"  
