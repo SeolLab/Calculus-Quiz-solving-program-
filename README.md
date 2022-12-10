@@ -109,7 +109,7 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 ### 🪜step3 
 | 계산 
 ### 🪜step4 
-| 출력
+| 출력 - 아래 Reference [step4 text2handwritng]코드 참고
 #### 💡tips: 
 syntax Error:   "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape"  
 solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'로 변경, 또는 '\'대신 '\\'이용.
@@ -147,6 +147,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 * [2. research_converting equation to LaTex by using **mathocr**](https://github.com/harvardnlp/im2markup)
 * [3. research_converting equation to LaTex by using **mathpixocr_wrapper** ](https://github.com/minyez/mathpixocr_wrapper)
 * [4. research_MathOCR](https://github.com/AIRLegend/MathOCR)
+* [step4 text2handwritng](https://itnext.io/convert-text-into-your-handwriting-91a1ed9aefd0)
 
 
 
