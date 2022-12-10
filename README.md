@@ -53,7 +53,7 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 
 
-<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="90%" />
+<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="80%" />
 <img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="90%" />
 
 
@@ -113,10 +113,12 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 </p>
 
 
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/83863024/206823161-8a34cc37-6d73-472a-a8ab-b2b303637e51.jpg">
-  <img src="https://user-images.githubusercontent.com/83863024/206823164-7c2897d2-2759-4461-ade8-126d43df6f86.jpg">
-</p>
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206823400-3834ec39-5f4b-4263-ba72-43cef0a76dbd.jpg)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206823395-fe3d36c8-bd4b-4fbd-82f1-4155ddae4abf.jpg)
+
+
+
 
 
 
