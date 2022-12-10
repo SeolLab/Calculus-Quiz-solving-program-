@@ -12,7 +12,7 @@ import sys
 import glob 
 
 
-Latex_equation = '\int_{0}^{\frac{\pi}{2}}}\sin^{2}x d x'  #예시 값. 
+Latex_equation = '\int_{0}^{\frac{\pi}{2}}}\sin^{2}x d x'  #예시 4번 문제 값. 
 #참고.(변환된 값)
 # Latex_equation =
 # '''
@@ -84,8 +84,8 @@ val = (Integral(function,(x,m[low_idx],high_val)).doit())
 
 
 answer = ['1-3/e**(2)','2*e**(2)-2','ln(2)/2-1/2',
-    'pi/4','ln(sqrt(2)+1)/2 + sqrt(2)/2','sqrt(3)-pi/3']           # 위에서 구한 정답을 answer list에 차례로 저장. 
-answer.append(val)
+    'ln(sqrt(2)+1)/2 + sqrt(2)/2','sqrt(3)-pi/3','pi*a*b']           # 위에서 구한 정답을 answer list에 차례로 저장. 
+answer.insert(3,val)
 
 ## 추가본. 
 # if 'iint' in Latex_equation: # 이중적분, 면적분
