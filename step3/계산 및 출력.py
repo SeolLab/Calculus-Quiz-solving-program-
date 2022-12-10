@@ -14,16 +14,6 @@ import glob
 
 Latex_equation = '\int_{0}^{\frac{\pi}{2}}}\sin^{2}x d x'  #예시 4번 문제 값. 
 #참고.(변환된 값)
-# Latex_equation =
-# '''
-# '\int_{1}^{e^{2}}{\frac{\ln x}{x^{2}}}d x'   # 1번 문제 
-# '\int_{1}^{e^{2}}\ln^{2}x d x' #2번 문제
-# '\int_{0}^{\frac{\pi}{3}}}\sin x \ln (\cos x) d x'   #3번 문제 
-# '\int_{0}^{\frac{\pi}{2}}}\sin^{2}x d x'     # 4번문제
-# '\int_{0}^{\frac{\pi}{4}}\sec^{3}x d x'   #5번 문제
-# '\int_{0}^{1}\frac{x}{\sqrt{3-2x-x^{2}}}\ d x' # 6번 문제
-# '{\frac{x^{2}}{a^{2}}}+{\frac{y^{2}}{b^{2}}}=1'   #7번 문제
-# '''
 
 
 # '\int_1^{e^2}(\ln x)^2 d x'
