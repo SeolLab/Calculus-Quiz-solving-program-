@@ -82,7 +82,8 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 
 
-#### Try3 <관심영역 수동 드래그> 정말 단순한 경우만 생각하기로 함. 컴퓨터 상에서 캡처해 OCR을 돌릴 것으로 가정했고, 임의로 사각형을 출력하는 대신, 원하는 만큼만 드래그해서 crop되도록 함. 최종적으로 이 프로그램을 사용했으므로, 아래 pre step2의 크롤링 코드와 붙여 영상을 게재함. (영상 내용: 문제지 앞 장의 문제 4개를 드래그해 crop시키고 열린 창을 닫는다. 닫는 순간 문제지 뒷 장이 뜬다. 뒷 장에서도 마찬가지로 드래그해 crop시키고 열린창을 닫는다. crop된 사진들은 png파일로써 드라이브에 자동 저장된다.- jupyter환경을 이용한 게 이렇게 자동 저장이 간편하게 하기 위해서.- 앞서 열린 창이 닫힘과 동시에 저장된 파일들은 내가 원하는 홈페이지에 자동 업로드 시킨다.)
+#### Try3 <관심영역 수동 드래그> 
+| 정말 단순한 경우만 생각하기로 함. 컴퓨터 상에서 캡처해 OCR을 돌릴 것으로 가정했고, 임의로 사각형을 출력하는 대신, 원하는 만큼만 드래그해서 crop되도록 함. 최종적으로 이 프로그램을 사용했으므로, 아래 pre step2의 크롤링 코드와 붙여 영상을 게재함. (영상 내용: 문제지 앞 장의 문제 4개를 드래그해 crop시키고 열린 창을 닫는다. 닫는 순간 문제지 뒷 장이 뜬다. 뒷 장에서도 마찬가지로 드래그해 crop시키고 열린창을 닫는다. crop된 사진들은 png파일로써 드라이브에 자동 저장된다.- jupyter환경을 이용한 게 이렇게 자동 저장이 간편하게 하기 위해서.- 앞서 열린 창이 닫힘과 동시에 저장된 파일들은 내가 원하는 홈페이지에 자동 업로드 시킨다.)
 
 
 
@@ -248,7 +249,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 * 추후 편미분, 미분방정식, 선형대수 문제 풀이까지 확장해야 함, 선명하지 않은 사진에 대해서도 좋은 성능을 유지하도록 코드 수정 필요. 
 
 
-## Reference
+## 📖 Reference
 * [research_Korean_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-kor-textbuilder/)
     * [sub reserch_digital_file(png)_reader: by using pyocr](https://www.zinnunkebi.com/python-tesseract-pyocr-digit/)
 * [1. research_converting equation to LaTex by using **mathocr**](https://github.com/lukas-blecher/LaTeX-OCR)
