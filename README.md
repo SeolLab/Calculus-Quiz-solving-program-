@@ -99,6 +99,9 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 
 <p align="center"><img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="80%" ></p>  
 
+참고로, 크롤링으로 colab창을 띄우면 로그인 화면이 나옴. 비정상적인 접속을 차단하려는 의도로 보이는데, 이를 해결하기 위한 우회법은 다음 사이트를 참고.
+https://onsoim.tistory.com/entry/undetectedchromedriver
+
 
 ### 🪜step2
 | 수식을 LaTeX로 변환 - 아래 [Reference](#Reference)의 [1. research_converting equation to LaTex by using **mathocr**]을 참고. 
