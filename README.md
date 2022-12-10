@@ -1,5 +1,5 @@
 # 🐭미퀴마우스ver2.0🖱️
-<span style="color:red"> Calculus Quiz solving program</span> **미**분적분학 **퀴**즈 풀어주는 프로그램 (a.k.a  Micqui Mouse)  
+<span style="color:red"> Calculus Quiz solving program</span> **미**분적분학 **퀴**즈를 대신 풀어주는 프로그램 (a.k.a  Micqui Mouse)  
 #OCR #mathocr  
 
 
