@@ -52,20 +52,20 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 #### Try1 <이미지 경계선 자동 추출>
 
 
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="80%" /></p>
 
-<img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="80%" />
-<img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="90%" />
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="80%" /></p>
 
 
-<img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="90%" />
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="80" /></p>
 
 #### Try2 <직사각형 영역 수동 추출>
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역을 내가 원하는 형태의  
 
 
 
-<img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="90%">
-<img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="90%">
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="80%"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="80%"></p>
 
 
 
@@ -98,7 +98,7 @@ for i in range(1,len(output)+1):
 #### 💡tips: 
 send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driver 파일 위치를 찾은 후 import glob를 사용해 quiz7_crop*.png로 output설정, for문을 이용해 전부 업로드시킨다.
 
-<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="90%" >
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="80%" ></p>
 
 
 ### 🪜step2
@@ -106,14 +106,14 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 
 
 
-
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/83863024/206823159-7cb8b69b-95b9-4869-a145-cea1191b0ee1.png">
-  <img src="https://user-images.githubusercontent.com/83863024/206823160-ff9eb107-3d43-4f81-b304-60281380e72a.png">
-</p>
+ex1) 기본 캡처            |  ex2) 흑백반전 캡처
+:-------------------------:|:-------------------------:
+![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206823159-7cb8b69b-95b9-4869-a145-cea1191b0ee1.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206823160-ff9eb107-3d43-4f81-b304-60281380e72a.pn)
 
 
-Solarized dark             |  Solarized Ocean
+
+
+ex3) 기본 촬영사진            |  ex4) 흑백반전 촬영사진
 :-------------------------:|:-------------------------:
 ![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206823400-3834ec39-5f4b-4263-ba72-43cef0a76dbd.jpg)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206823395-fe3d36c8-bd4b-4fbd-82f1-4155ddae4abf.jpg)
 
@@ -135,7 +135,7 @@ github 코드 파일에 step4가 없는 이유는 step3코드와 함께 작성�
 syntax Error:   "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape"  
 solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'로 변경, 또는 '\'대신 '\\'이용.
 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="400" height="300"/></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="80%" /></p>
 
 
 
