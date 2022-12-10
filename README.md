@@ -71,12 +71,10 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 
 #### Try3 <관심영역 수동 드래그>
-<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="46%" >
 
 
-
-### 🪜pre step2
-| 자동 업로드 by 크롤링  
+### 🪜pre step2 - 
+| 관심영역 수동 드래그 후 자동 업로드 by 크롤링  
 ```
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -84,13 +82,10 @@ driver = webdriver.Chrome()
 driver.get("https://colab.research.google.com/drive/1FJFH7UWQjfSuCFTDeEsvnuXI1-P3kC3O#scrollTo=CBdcWZBtCYCZ")
 driver.find_element_by_css_selector("input[type='file']").send_keys(r"C:\Users\Admin\Desktop\quiz7-1.png" width="40%", height ="40%") 
 ``` 
-
 <C:\Users\Admin\Desktop\quiz7-1.png>파일을 colab의 'LaTeX변환' 코드가 작성된 창에 자동 업로드 되도록 설정.
-
 위에서 주어진 코드와 png파일은 예시일 뿐, 실제로는 드래그해서 얻은 cropped파일이 send_keys에 적히도록 작성, 사용자가 드래그해서 수동으로 추출한 png파일들이 colab환경에 자동 업로드. 아래 코드는 이에 대한 예시. 사용자가 드래그해서 수동으로 추출한 여러 png파일들을 convert 홈페이지에 자동 업로드하는 과정. 
-
 ```
-#크롤링 예시 - in convertor 홈페이지. 
+#크롤링 예시 - in convertor 홈페이지.(아래 gif영상 참고.)
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import glob 
@@ -103,13 +98,15 @@ for i in range(1,len(output)+1):
 ```
 #### 💡tips: 
 send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driver 파일 위치를 찾은 후 import glob를 사용해 quiz7_crop*.png로 output설정, for문을 이용해 전부 업로드시킨다. 
+<img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="46%" >
+
 
 ### 🪜step2
-| 수식을 LaTeX로 변환 - 아래 reference의 1. research_converting equation to LaTex by using **mathocr**을 참고. 
+| 수식을 LaTeX로 변환 - 아래 [Reference](#Reference)의 [1. research_converting equation to LaTex by using **mathocr**]을 참고. 
 ### 🪜step3 
 | 계산 
 ### 🪜step4 
-| 출력 - 아래 Reference [step4 text2handwritng]코드 참고
+| 출력 - 아래 [Reference](#Reference)의 [step4 text2handwritng]코드 참고
 
 github 코드 파일에 step4가 없는 이유는 step3코드와 함께 작성되었기 때문. 계산 후, 정답이(손글씨로) 문제지 화면에 바로 출력됨. 
 
