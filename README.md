@@ -105,6 +105,21 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 
 
 
+
+
+시행결과 
+
+실행코드            |  실행화면 
+:-------------------------:|:-------------------------:
+![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206849027-45972c4f-9490-470a-9af4-49d04c77f205.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206849057-83181415-3122-4f03-9d55-95f176629f15.png)
+
+
+
+
+
+
+
+
 ex1) 기본 캡처            |  ex2) 흑백반전 캡처
 :-------------------------:|:-------------------------:
 ![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206823159-7cb8b69b-95b9-4869-a145-cea1191b0ee1.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206823160-ff9eb107-3d43-4f81-b304-60281380e72a.png)
