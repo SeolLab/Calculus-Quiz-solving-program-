@@ -110,7 +110,9 @@ send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driv
 ### 🪜step4 
 | 출력 - 아래 [Reference](#Reference)의 [step4 text2handwritng]코드 참고
 
-github 코드 파일에 step4가 없는 이유는 step3코드와 함께 작성되었기 때문. 계산 후, 정답이(손글씨로) 문제지 화면에 바로 출력됨. 
+github 코드 파일에 step4가 없는 이유는 step3코드와 함께 작성되었기 때문. 계산 후, 정답이(손글씨로) 문제지 화면에 바로 출력됨.
+
+계산 된 값들은 answer list에 차례로 저장된 후(문제 수가 통상 7-8개로 주어지기 때문에 len(answer)값은 8을 넘지 않음.) '정답입력받기.txt' 파일에 자동 write됨. (현재는 빈 상태) 그 후 문제 순서대로 지정된 문제지 좌표값 (xcord, ycord) 위치에 준비된 글꼴 사진을 붙여넣음.(pasting(xcord,ycord)) 문제지는 앞면, 뒷면이 있으므로 최종 결과를 show(). 
 
 #### 💡tips: 
 syntax Error:   "(unicode error) 'unicodeescape' codec can't decode bytes in position 2-3: truncated \UXXXXXXXX escape"  
@@ -137,6 +139,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
    * 수식 이미지 분리와 OCR Research에 많은 시간을 할애하는 바람에 다양한 문제에 풀이 알고리즘을 적용하지 못함. 특히 적분에 한정된 문제 풀이였음. 
 * step4 
    * 특정 문제가 너무 길어져 한 면을 할애할 경우, 출력 위치를 설정하는데 어려움이 생김. 지금은 한 면에 4문제만 있어서 문제가 없지만, 가령 한 면에 2문제만 들어가면 출력 위치를 따로 설정해줘야 함.  
+
 
 ## 추후 필요한 연구
 * 추후 편미분, 미분방정식, 선형대수 문제 풀이까지 확장해야 함, 선명하지 않은 사진에 대해서도 좋은 성능을 유지하도록 코드 수정 필요. 
