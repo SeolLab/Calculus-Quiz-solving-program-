@@ -72,7 +72,7 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 
 
 ### 🪜pre step2 - 
-| 관심영역 수동 드래그 후 자동 업로드 by 크롤링  
+| 관심영역 수동 드래그 후 자동 업로드 by 크롤링  - [Reference](#Reference)의[ROI 수동 추출]코드 참고
 ```
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -203,7 +203,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 * [3. research_converting equation to LaTex by using **mathpixocr_wrapper** ](https://github.com/minyez/mathpixocr_wrapper)
 * [4. research_MathOCR](https://github.com/AIRLegend/MathOCR)
 * [step4 text2handwritng](https://itnext.io/convert-text-into-your-handwriting-91a1ed9aefd0)
-
+* [ROI 수동 추출](https://inhovation97.tistory.com/57)
 
 
 ## :mortar_board: License 
