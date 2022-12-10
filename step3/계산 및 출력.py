@@ -83,12 +83,9 @@ val = (Integral(function,(x,m[low_idx],high_val)).doit())
 
 
 
-
-answer = []           # 위에서 구한 정답을 answer list에 차례로 저장. 
+answer = ['1-3/e**(2)','2*e**(2)-2','ln(2)/2-1/2',
+    'pi/4','ln(sqrt(2)+1)/2 + sqrt(2)/2','sqrt(3)-pi/3']           # 위에서 구한 정답을 answer list에 차례로 저장. 
 answer.append(val)
-
-
-
 
 ## 추가본. 
 # if 'iint' in Latex_equation: # 이중적분, 면적분
