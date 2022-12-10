@@ -63,21 +63,21 @@ requirement.txt 중, 아래 3개는 OCR을 이용해 수식 사진을 LaTeX 포�
 다음으로 시도한 방법은 이미지의 경계선을 자동으로 추출해주는 코드를 작성. 이를 발전시켜 수식만 인식하려고 함. 처음엔 글자란 글자는 다 경계선으로 검출. 그래서 해당 코드를 발전시켜 수식이 있는 부분을 직사각형 처리하고, 해당 width와 height값 이상의 직사각형만 추출해 crop시켜 저장하도록 함. 문제는 이상한 네모 박스까지 긁어왔다는 것.('감독자 확인' 박스 같은..) 그리고 심지어 수식이 있는 직사각형 처리부는 완전히 crop되지 않고 중간이 짤리는 기현상 발생. 그래서 결국 수동으로 긁어오는 게 최선임을 깨닫게 됨.
 
 아래는 처음에 글자란 글자는 다 경계선을 검출한 것을 보여줌. 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="80%" /></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206688422-4183037d-ce54-4a90-bddd-864235687712.gif" width="100%" /></p>  
 
 아래는 직사각형 처리후 crop시키는 것을 보여줌. 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="80%" /></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206689787-35a1efa8-bf4c-4732-8d3c-f1167b256422.gif" width="100%" /></p>  
 
 그러던 와중에 이 프로그램의 유용성을 발견. 일정 width와 height값이 넘는 사각형을 검출하도록 설정하면 평면도 상에서 안방, 거실, 화장실 등의 공간을 따로 따로 crop해 저장해 줌. crop된 사진들로, 동떨어진 방이어도 이어 붙여 보게 하는 프로그램으로 발전시킬 수 있을듯. 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="80%" /></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206691646-6ee9aacb-aec2-47f8-bb76-600d21a90c95.gif" width="100%" /></p>  
 
 
 #### Try2 <직사각형 영역 수동 추출>
 | 경계선 자동 추출 방식이 어려워 수동 추출 방식으로 방법을 바꿈. 원하는 영역만 점을 찍어 추출할 수 있게 함. 점은 총 4개만 찍으면 됨. 4번째 점이 찍히는 순간 첫번째 점과 4번째 점이 이어져 자동으로 사각형이 출력됨. 정말 말그대로 사용자가 마음대로 영역을 정의할 수 있기 때문에, 글자와 수식이 왜곡되기 쉬움. 이러한 사고를 막고자 이미지가 자동 보정되도록 함. 특히 문제를 사진 찍어 OCR을 돌릴 경우를 생각해, 이미지 원근법 변형이 가능토록 함. 아래 영상이 이를 잘 활용한 전형적인 예시. 책 사진은 기울어진 경우가 많기에 보정을 해줘야 함. 이 프로그램을 따라 원하는 부분만 수동으로 추출하면 잘 추출되는 것을 볼 수 있음.     
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="80%"></p> 
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206682380-9425773e-c14a-4222-ad46-20e85f9fa991.gif"  width="100%"></p> 
 
 문제는 이 프로그램을 문제지에 그대로 적용하는 경우임. 그대로 적용하면 crop된 사진은 일그러지게 됨. 문제를 사진 찍어 사용하는 경우 효과를 볼 수 있겠으나, 컴퓨터에서 캡처할 경우 이 방식은 역효과를 냄. 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="80%"></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206684381-8824bafd-4630-4a3e-95d6-034adbf5b7d0.gif"  width="100%"></p>  
  
 
 
@@ -113,7 +113,7 @@ for i in range(1,len(output)+1):
 * send_keys명령은 절대경로만 인식하므로, jupyter notebook 환경 driver 파일 위치를 찾은 후 import glob를 사용해 quiz7_crop*.png로 output설정, for문을 이용해 전부 업로드시킨다.
 * chromedriver.exe를 설치한 뒤 이를 실행 프로그램과 같은 파일에 위치하도록 설정해줘야 함. 안하면 크롤링 안됨!! 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="80%" ></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206695627-a13e3556-812c-4925-bc79-a4ed8e2d86f8.gif" width="100%" ></p>  
 
 참고로, 크롤링으로 colab창을 띄우면 로그인 화면이 나옴. 비정상적인 접속을 차단하려는 의도로 보이는데, 이를 해결하기 위한 우회법은 다음 사이트를 참고.
 https://onsoim.tistory.com/entry/undetectedchromedriver
@@ -144,11 +144,12 @@ from difflib import SequenceMatcher
 def similar(a, b):
         return SequenceMatcher(None, a, b).ratio()
 ```
-(여기서 아쉬운 점은 픽셀 사이즈가 동일하도록 설정해야 했는데, 세심함이 부족했음.)
+(여기서 아쉬운 점은 픽셀 사이즈가 동일하도록 설정해야 했는데, 세심함이 부족했음.추가로 필자의 잘못인데, 정확도평균값을 'matching_rate average'라고 쓴다는 걸 average_runtime이라고 써버림. 사진에서 두번째 average_runtime은 정확도 평균임.)
 
 ex1) 기본 캡처            |  ex2) 흑백반전 캡처
 :-------------------------:|:-------------------------:
 ![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206823159-7cb8b69b-95b9-4869-a145-cea1191b0ee1.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206823160-ff9eb107-3d43-4f81-b304-60281380e72a.png)  
+
 
 
 
@@ -159,6 +160,8 @@ ex1) 기본 캡처            |  ex2) 흑백반전 캡처
 ![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206862219-4796d4d6-bf8a-45bf-8a55-fc215c93f59e.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206862104-f5c4457d-8b38-4848-9303-de6bf733c750.png)
 
 
+
+사실 1과 2의 비교는 그렇게 유의미하지 않음. 실행시간의 평균 차이가 소수점 아래 세번째 자리에서부터 발생. 유효숫자로 보기엔 그 값이 너무 작음. 소소한 차이나 소숫점 아래 네번째 자리에서 반올림 한경우, 1.205 > 1.202(s)로 2가 평균적으로 더 빨리 수행됨. 흑백 반전을 한 경우에 OCR이 더 잘 돌아간다는 것. 한편 1은 정확도가 약 0.97, 2는 정확도가 1.0임. 흑백으로 반전해 캡처한 경우, 반전하지 않은 경우에 생길 수 있는 일말의 오류마저 잡아낸다는 뜻임. 1과 2 모두 2초를 넘어가는 경우가 없으며 한 부분에 집중적으로 몰려 있는 것으로 확인됨. 정규분포를 따를 것. 또한, 정확도에서 큰 문제를 일으키지 않았기에, 시간과 정확도 사이의 상관관계를 해석하는 데는 무리가 있음. 3과 4의 결과를 확인해봐야 해석할 수 있을 듯. 
 
 
 
@@ -174,6 +177,10 @@ ex3) 기본 촬영사진            |  ex4) 흑백반전 촬영사진
 :-------------------------:|:-------------------------:
 ![기본 처리 사진-3분소요](https://user-images.githubusercontent.com/83863024/206861203-dab18d8e-bc14-467a-ba85-9a11fe75dd5a.png)  | ![흑백처리 사진 - 1분 소요](https://user-images.githubusercontent.com/83863024/206861918-7e17fc34-cb86-4323-a363-40461e222487.png)
 
+
+3은 1의 시간에 비해 약 5배 증가함. 4는 2의 시간에 비해 3배가량 증가함. 확실히 흑백반전 촬영을 한 경우 시간은 덜 증가함. 소숫점 아래 두번째 자리에서 반올림 한 경우, 3은 5.9, 4는 3.2s가 소요. 놀라운 점은 정확도. 1과 2에 비해 정확도가 급격하게 떨어짐. 소숫점 아래 세번째 자리에서 반올림 했을 때, 3은 0.14, 4는 0.35. 확실히 3에 비해 4의 정확도는 2배 이상 뛰어남. 
+정확도가 현저히 떨어졌기에, 1과 2에서 하지 못한 상관관계 분석이 가능함. 3에서 시간과 정확도는 반비례하는 추세를 보임. 판독 시간이 늘어나는 표본은 잘못 인식한 경우일 확률이 높다는 것. 이에 반해 4는 그 추세가 눈에 띄게 감소함. 점의 분포가 우상향되어 있음.이는 소요시간이 오래 걸린다하더라도, 출력한 수식은 최대한 정답에 가깝게 출력한다는 뜻. 
+변인통제하지 못한 부분이 있기에 속단할 수 있는 해석은 아니지만, 흑백반전을 해야 성능이 좋아진다는 사실은 명백해 보임. 그리고 ~~미적분 점수 말아먹기 싫으면~~ 사진으로 찍어서 프로그램 쓰지 말고 컴퓨터에서 캡처해 프로그램 돌릴 것. 
 
 
 
@@ -204,17 +211,17 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
 
 
 아래 사진은 3D그림판 환경에서 아스키코드에 맞는 문자를 필기체 형식으로 적고 파일로 저장하는 과정을 나타낸 것. 전부 필자가 입력하진 않았고, 아래 [Reference](#Reference)의 [step4 text2handwritng]코드와 파일을 참고했으며, 약 10여개의 특수문자를 추가했다.  
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="80%" /></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/204967023-70a5aa78-b40f-474b-9f76-e62a7f455c6f.png" width="100%" /></p>  
 
 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206849502-2cf94b83-b4c0-495a-91d2-b12ac28112f3.png" width="80%" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206849502-2cf94b83-b4c0-495a-91d2-b12ac28112f3.png" width="100%" /></p>
 
 
 
 
 ### 최종 시행결과
-<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206853425-a14af98b-7587-4876-839b-430d1fed878d.gif" width="80%" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/83863024/206853425-a14af98b-7587-4876-839b-430d1fed878d.gif" width="100%" /></p>
 
 
 
@@ -229,7 +236,7 @@ solution:      가령, path = 'C:\Users\Downloads\broker.png'에서 '\'를 '/'�
    * 자동으로 한글과 수식을 분리해주는 기능을 넣지 못함. 아직은 수동으로 수식을 한글과 분리해야 함. ocr로 한글 텍스트 파일을 불러오는 데는 성공했으나, 수식만 따로 분리하는 데는 실패. 
 
 * step2 
-   * ocr(pix2tex.LatexOCR()이용)상 한계 존재. 사진이 흔들렸거나 흑백을 반전한 경우, 수식을 인식하는 데 걸리는 시간이 늘어남. (ex)작고 선명하지 않은 0값을 Θ로 인식함.)
+   * ocr(pix2tex.LatexOCR()이용)상 한계 존재. 사진이 흔들렸을 경우, 정확도는 급격하게 떨어짐. 아울러 사진에서 흑백을 반전하면, 수식을 인식하는 데 걸리는 시간이 줄어듬(자동으로 흑백을 반전하도록 개선할 필요 있음). (ex)작고 선명하지 않은 0값을 Θ로 인식함.)
    
 * step3 
    * 수식 이미지 분리와 OCR Research에 많은 시간을 할애하는 바람에 다양한 문제에 풀이 알고리즘을 적용하지 못함. 특히 적분에 한정된 문제 풀이였음. 
